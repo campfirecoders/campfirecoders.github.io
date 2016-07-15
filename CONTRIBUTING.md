@@ -26,9 +26,9 @@ Your local repo's `upstream` should be set to `https://github.com/campfirecoders
    Your branch is up to date 'origin/master'
    ```
    
-3. If you are not on master, use `checkout master`
+3. If you are not on master, use `git checkout master`
 4. Do a `pull` with rebase against `upstream`:
-   `git pull --rebase upstream`
+   `git pull --rebase upstream master`
    This will sync your local repo with the original master without making an additional commit locally.
 5. Create a branch off of master with: `git checkout -B branchname` replacing `branchname` with the name of your new branch. Use a name that gives an idea of what feature or fix you are going to implement such as `navbar-styling`.
 6. Now you're ready to make some changes to your local files!
