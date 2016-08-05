@@ -29,7 +29,9 @@ header {
   float: left;
   margin-top: .2em;
  }
-
+ header > a {
+  color: #fff;
+ } 
 #nav {
   list-style-type: none; 
   margin: 0;
