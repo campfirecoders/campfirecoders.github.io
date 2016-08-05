@@ -17,15 +17,58 @@ article {
   color: #333;
 }
 
+/* HEADER */
+
 header {
   background-color: #333;
-  padding: .8em 1em;
+  /*padding: 20px 10px 70px;*/
+  padding: 1.5em .8em 4.5em;
   color: #fff;
+}
+ header h1 {
+  float: left;
+  margin-top: .2em;
+ }
+
+#nav {
+  list-style-type: none; 
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+
+#nav li {
+  display: inline-block;
+  /*margin-top: -10px;*/
+}
+
+#nav li a {
+  display: block;
+  margin-left: 30px;
+  margin-right: 30px;
+  padding: 15px 40px;
+  border: 2px solid #EC3;
+  color: #fff;
+  text-align: center;
+  text-decoration: none; 
+  border-radius: 5px;   
+}
+
+#nav li a:hover {
+  color: #353020;
+  background-color: #EC3;
+}
+
+#nav li a.active {
+  color: #353020;
+  background-color: #EC3;
 }
 
 .icon {
   color: #ec3;
 }
+
+/* BANNER SECTION */
 
 .banner {
   background-image: url(../img/banner.jpg);
@@ -45,6 +88,32 @@ header {
   margin: 5px auto;
 }
 
-.members {
-  background-color: #
+/*MEDIA QUERIES*/
+
+@media (max-width: 870px) {
+  header {
+    /*height: 100px;*/
+    padding: 2em .8em 8em;
+  }
+
+  #nav {
+    float: left;
+  }
+
+  #nav li a {
+    margin-top: .3em;
+  }
 }
+
+@media (max-width: 600px) {
+  header {
+    /*height: 100px;*/
+    padding: 2em .8em 8.8em;
+  }
+
+  header h1 {
+    font-size: 1.4em;
+    margin-top: -20px;
+  }
+}
+
